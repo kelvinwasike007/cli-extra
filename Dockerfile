@@ -8,8 +8,9 @@ FROM node:lts-slim
 
 
 # Copy package.json and package-lock.json to the working directory
+RUN ls
 
-
+RUN pwd
 # Install dependencies
 RUN yarn install
 
